@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: <component-name>
+  namespace: <system-name>
+  title: <Human Readable Title>
+  description: <Short description>
+  annotations:
+    backstage.io/kubernetes-id: <component-name> # optional
+    backstage.io/kubernetes-namespace: <system-name> # optional
+spec:
+  owner: default/<owner-name>
+  type: <service|website|library|app>
+  lifecycle: <experimental|production>
+  system: default/<system-name>
+  providesApis: # optional
+    - <api-name>
+  consumesApis: # optional
+    - <target-api-namespace>/<target-api-name>
+  dependsOn: # optional
+    - resource:<resource-namespace>/<resource-name>
+    - component:<component-namespace>/<component-name>

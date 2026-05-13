@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: <resource-name>
+  namespace: <system-name>
+  title: <Human Readable Title>
+  description: <Short description>
+spec:
+  owner: default/<owner-name>
+  type: <s3-bucket|database|sqs-queue|dynamodb-table>
+  lifecycle: <experimental|production>
+  system: default/<system-name>
