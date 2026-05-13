@@ -8,6 +8,8 @@ Skills are reusable prompt files that extend Claude Code with specialized behavi
 
 ## Skills
 
+### General
+
 | Skill | Description |
 |-------|-------------|
 | [brainstorming](./brainstorming/) | Turn ideas into designs through collaborative dialogue before writing code |
@@ -23,6 +25,10 @@ Skills are reusable prompt files that extend Claude Code with specialized behavi
 | [update-catalog-info](./update-catalog-info/) | Create or update `catalog-info.yaml` for Backstage Software Catalog |
 | [vibe-cleanup-typescript](./vibe-cleanup-typescript/) | Identify and fix common code quality issues in AI-generated TypeScript |
 | [writing-plans](./writing-plans/) | Turn a spec or design into a concrete implementation plan |
+
+### E-commerce
+
+Skills for e-commerce engineering workflows live in [`ecomm/`](./ecomm/).
 
 ## Usage
 
